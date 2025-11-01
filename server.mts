@@ -4,7 +4,7 @@ import next from "next";
 
 const dev = process.env.NODE_ENV !== "production";
 const hostname = process.env.HOSTNAME || "localhost";
-const port = Number(process.env.PORT) || 4000;
+const port = Number(process.env.PORT) || 3000;
 
 const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
