@@ -18,3 +18,5 @@ const MessageSchema: Schema = new Schema({
 export const Message: Model<IMessage> =
   (mongoose.models.Message as Model<IMessage>) ||
   mongoose.model<IMessage>("Message", MessageSchema);
+
+  export default Message;

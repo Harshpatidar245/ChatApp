@@ -10,6 +10,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie": "^1.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.2",
     "next": "^16.0.2-canary.3",
     "react": "^19.2.0",
@@ -19,6 +23,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/mongoose": "^5.11.96",
     "@types/node": "^20",
     "@types/react": "^19",

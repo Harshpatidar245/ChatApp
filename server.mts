@@ -2,9 +2,11 @@
 import { createServer } from "node:http";
 import next from "next";
 import { Server } from "socket.io";
-import { connectDB } from "./lib/db.mjs";
-import { Room } from "./models/Room.mjs";
-import { Message } from "./models/Message.mjs";
+import { connectDB } from "./lib/db.js";
+import Room from "./models/Room.mjs";
+import User from "./models/User.mjs";
+import Message from "./models/Message.mjs";
+// import { Message } from "./models/Message.mjs";
 
 const dev = process.env.NODE_ENV !== "production";
 const hostname = process.env.HOSTNAME || "localhost";

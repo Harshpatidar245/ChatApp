@@ -1,15 +1,10 @@
-// models/Room.ts
-import mongoose, { Schema, Document, Model } from "mongoose";
+// models/Room.mts
+import mongoose from "mongoose";
 
-export interface IRoom extends Document {
-  name: string;
-  createdAt: Date;
-}
-
-const RoomSchema: Schema = new Schema({
+const RoomSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   createdAt: { type: Date, default: Date.now },
 });
 
-export const Room: Model<IRoom> =
-  (mongoose.models.Room as Model<IRoom>) || mongoose.model<IRoom>("Room", RoomSchema);
+const Room = mongoose.models.Room || mongoose.model("Room", RoomSchema);
+export default Room;
